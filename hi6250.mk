@@ -171,6 +171,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl:64 \
     android.hardware.thermal@1.0-service \
 
+# Tether
+PRODUCT_PACKAGES += \
+    android.hardware.tetheroffload.config@1.0 \
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/huawei/hi6250-common
