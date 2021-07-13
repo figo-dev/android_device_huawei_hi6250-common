@@ -38,6 +38,8 @@ TARGET_NO_RADIOIMAGE := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # Kernel
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := $(COMMON_PATH)/kernel/mkbootimg.mk
 BOARD_KERNEL_BASE := 0x00400000
 BOARD_KERNEL_CMDLINE := loglevel=4 initcall_debug=n page_tracker=on unmovable_isolate1=2:192M,3:224M,4:256M printktimer=0xfff0a000,0x534,0x538
 BOARD_KERNEL_IMAGE_NAME := Image.gz
