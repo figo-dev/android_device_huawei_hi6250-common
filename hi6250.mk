@@ -160,6 +160,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.1 \
     android.hardware.radio.deprecated@1.0 \
+    
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
