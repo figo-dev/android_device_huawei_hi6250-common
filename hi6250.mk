@@ -139,6 +139,11 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag \
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-service
+
 # Recovery
 AB_OTA_UPDATER := false
 
