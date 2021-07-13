@@ -179,6 +179,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service \
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/huawei/hi6250-common
