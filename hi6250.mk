@@ -77,6 +77,12 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service \
     gatekeeper.hi6250 \
+    
+# GPS/GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
+    android.hardware.gnss@1.0-service \
+    gps.hi6250 \
 
 # Graphics
 PRODUCT_PACKAGES += \

@@ -44,7 +44,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(COMMON_PATH)/kernel/mkbootimg.mk
 BOARD_KERNEL_BASE := 0x00400000
-BOARD_KERNEL_CMDLINE := loglevel=4 initcall_debug=n page_tracker=on unmovable_isolate1=2:192M,3:224M,4:256M printktimer=0xfff0a000,0x534,0x538 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := loglevel=4 initcall_debug=n page_tracker=on unmovable_isolate1=2:192M,3:224M,4:256M printktimer=0xfff0a000,0x534,0x538 ro.kernel.android.gpsttybaud=9600 androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x07A00000
@@ -54,6 +54,9 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/huawei/hi6250
 TARGET_KERNEL_CONFIG := merge_hi6250_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+
+# GPS/GNSS
+BOARD_HAS_GPS_HARDWARE := true
 
 # Graphics
 ANDROID_ENABLE_RENDERSCRIPT := true
