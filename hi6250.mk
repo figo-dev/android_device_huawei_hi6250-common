@@ -152,6 +152,10 @@ PRODUCT_PACKAGES += \
     init.recovery.hi6250.rc \
     resize2fs_static
 
+# RenderScript
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl \
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/huawei/hi6250-common
