@@ -41,7 +41,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(COMMON_PATH)/kernel/mkbootimg.mk
 BOARD_KERNEL_BASE := 0x00400000
-BOARD_KERNEL_CMDLINE := loglevel=4 initcall_debug=n page_tracker=on unmovable_isolate1=2:192M,3:224M,4:256M printktimer=0xfff0a000,0x534,0x538
+BOARD_KERNEL_CMDLINE := loglevel=4 initcall_debug=n page_tracker=on unmovable_isolate1=2:192M,3:224M,4:256M printktimer=0xfff0a000,0x534,0x538 androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x07A00000
@@ -70,6 +70,13 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Platform
 HISI_TARGET_PRODUCT := hi6250
 TARGET_USES_HISI_DTIMAGE := true
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/root/etc/fstab.hi6250
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := false
+TARGET_USES_MKE2FS := true
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
