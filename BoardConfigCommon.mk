@@ -24,4 +24,7 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
+# Board
+TARGET_BOARD_PLATFORM := hi6250
+
 include vendor/huawei/hi6250-common/BoardConfigVendor.mk
