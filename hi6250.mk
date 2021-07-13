@@ -60,6 +60,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service \
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.1-service.clearkey \
+    android.hardware.drm@1.1-service.widevine
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true \
+    ro.huawei.cust.drm.fl_only=false \
+    ro.huawei.cust.oma_drm=true \
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
