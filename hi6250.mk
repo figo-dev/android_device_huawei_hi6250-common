@@ -125,6 +125,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     memtrack.hi6250
 
+# Net
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # Recovery
 AB_OTA_UPDATER := false
 
