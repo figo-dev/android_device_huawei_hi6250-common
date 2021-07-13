@@ -129,6 +129,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.1 \
+    com.android.nfc_extras \
+    com.gsma.services.nfc \
+    libchrome.vendor \
+    NfcNci \
+    SecureElement \
+    Tag \
+
 # Recovery
 AB_OTA_UPDATER := false
 
