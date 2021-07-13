@@ -119,6 +119,12 @@ PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0 \
     android.hardware.media.omx@1.0-utils \
 
+# Memtrack
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    memtrack.hi6250
+
 # Recovery
 AB_OTA_UPDATER := false
 
