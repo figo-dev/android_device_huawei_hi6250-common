@@ -114,6 +114,11 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service \
 
+# Media OMX
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0 \
+    android.hardware.media.omx@1.0-utils \
+
 # Recovery
 AB_OTA_UPDATER := false
 
