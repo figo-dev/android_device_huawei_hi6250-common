@@ -27,4 +27,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 # Board
 TARGET_BOARD_PLATFORM := hi6250
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := hi6250
+TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
+
 include vendor/huawei/hi6250-common/BoardConfigVendor.mk
