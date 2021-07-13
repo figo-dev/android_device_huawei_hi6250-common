@@ -174,6 +174,10 @@ PRODUCT_PACKAGES += \
 # Tether
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0 \
+    
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service \
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
