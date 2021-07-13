@@ -78,6 +78,14 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     gatekeeper.hi6250 \
 
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.2-impl \
+    android.hardware.graphics.composer@2.2-service \
+    android.hardware.graphics.mapper@2.0-impl \
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
