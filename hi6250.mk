@@ -72,6 +72,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.huawei.cust.drm.fl_only=false \
     ro.huawei.cust.oma_drm=true \
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service \
+    gatekeeper.hi6250 \
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
