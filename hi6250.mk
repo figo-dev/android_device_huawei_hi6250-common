@@ -184,6 +184,19 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
+# Wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
+    android.hardware.wifi.supplicant@1.0 \
+    hostapd \
+    libwpa_client \
+    wificond \
+    wpa_supplicant
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.interface=wlan0 \
+    wifi.supplicant_scan_interval=15
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/huawei/hi6250-common
