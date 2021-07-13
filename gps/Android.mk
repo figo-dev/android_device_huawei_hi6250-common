@@ -20,17 +20,18 @@ LOCAL_PATH := $(call my-dir)
 # HAL module implemenation, not prelinked and stored in
 # hw/<OVERLAY_HARDWARE_MODULE_ID>.<ro.product.board>.so
 include $(CLEAR_VARS)
+LOCAL_VENDOR_MODULE := true
 LOCAL_PRELINK_MODULE := false
 LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_SHARED_LIBRARIES := liblog libcutils
-LOCAL_MODULE := gps.$(TARGET_PRODUCT)
+LOCAL_SHARED_LIBRARIES := liblog libcutils libhardware
+LOCAL_MODULE := gps.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := gps.c
 
-ifeq ($(wildcard $(LOCAL_PATH)/power-$(TARGET_PRODUCT).c),)
+ifeq ($(wildcard $(LOCAL_PATH)/power-$(TARGET_BOARD_PLATFORM).c),)
 LOCAL_SRC_FILES += power-stub.c
 else
-LOCAL_SRC_FILES += power-$(TARGET_PRODUCT).c
+LOCAL_SRC_FILES += power-$(TARGET_BOARD_PLATFORM).c
 endif
 
 include $(BUILD_SHARED_LIBRARY)
