@@ -51,6 +51,11 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.2-impl \
     android.hardware.camera.provider@2.4-impl \
 
+# Cas
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.0-impl \
+    android.hardware.cas@1.0-service
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
