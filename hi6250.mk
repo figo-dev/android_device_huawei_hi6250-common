@@ -56,6 +56,10 @@ PRODUCT_PACKAGES += \
     android.hardware.cas@1.0-impl \
     android.hardware.cas@1.0-service
 
+# ConfigStore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.1-service \
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
