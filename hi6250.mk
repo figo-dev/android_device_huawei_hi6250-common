@@ -6,6 +6,11 @@
 
 COMMON_PATH := device/huawei/hi6250-common
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
+
 # Recovery
 AB_OTA_UPDATER := false
 
